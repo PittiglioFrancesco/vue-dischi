@@ -2,18 +2,21 @@
   <div id="app">
     <Header/>
     <Vetrina/>
+    <Disco/>
   </div>
 </template>
 
 <script>
 import Vetrina from './components/Vetrina.vue'
 import Header from './components/Header.vue'
+import Disco from './components/Disco.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Vetrina
+    Vetrina,
+    Disco
   }
 }
 </script>

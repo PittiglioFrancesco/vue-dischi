@@ -5,6 +5,16 @@
         <h1 class="text-center text-uppercase">Vetrina</h1>
     </div>
 
+    <div class="row">
+        <h3 class="text-uppercase">Cerca</h3>
+    </div>
+
+    <div class="row riga3">
+        <input type="text" placeholder="Cerca un disco" @keyup="submitSearch" v-model="searchText">
+        <button>Reset</button>
+        <button>Cerca</button>
+    </div>
+
   </div>
 </template>
 
@@ -27,5 +37,16 @@ axios
 <style lang="scss" scoped>
 
 // div generale
+
+div{
+  .riga3{
+    input{
+      display: inline;
+    }
+    button{
+      display: inline;
+    }
+  }
+}
 
 </style>
